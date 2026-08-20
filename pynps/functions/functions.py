@@ -60,7 +60,7 @@ def get_pyinstaller():
     elif getattr(sys, 'frozen', False) is True: # runing on pyinstaller
         try:
             MEI = sys._MEIPASS
-            if 'Temp\_MEI' in MEI: # runing frozen on windows
+            if 'Temp_MEI' in MEI: # runing frozen on windows
                 return 'pi-onefile'
             else:
                 return 'pi-onefolder'
